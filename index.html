@@ -18,25 +18,21 @@
            1. PALET WARNA FINAL (DISAMAKAN DENGAN INDEX 2)
            ========================================================= */
         :root {
-            /* Backgrounds (Sesuai Index 2) */
             --bg-main: #4A7298;        /* Solid Denim Blue */
             --card-bg: #1E3A5F;        /* Solid Navy Blue */
             --card-hover-bg: #23436b;  /* Hover Navy Blue */
             --white: #FFFFFF;
 
-            /* Teks */
             --title-main: #FFFFFF;
             --title-sub: #E5E7EB;
             --text-btn: #FFFFFF;
             --text-add: #E5E7EB;
 
-            /* Border & Highlights */
             --border-default: 3px solid #88D4AB;  /* Highlight Hijau Mint */
             --border-hover: 3px solid #A3E4C2;    /* Highlight Hijau Mint Cerah */
             --outline-focus: #A3E4C2;
             --icon-color: #88D4AB;                /* Warna Ikon Hijau Mint */
             
-            /* Shadows HD Solid */
             --shadow-default: 0 6px 15px rgba(0, 0, 0, 0.2);
             --shadow-hover: 0 15px 30px rgba(0, 0, 0, 0.4);
         }
@@ -242,129 +238,49 @@
            2. UKURAN RESPONSIF PRESI Sesuai SPESIFIKASI
            ========================================================= */
 
-        /* A. DESKTOP — ≥ 1200px */
         @media (min-width: 1200px) {
-            .container {
-                width: 92%;
-                max-width: 1100px;
-                margin: 0 auto;
-            }
-            header {
-                padding-top: 40px;
-                padding-bottom: 24px;
-            }
+            .container { width: 92%; max-width: 1100px; margin: 0 auto; }
+            header { padding-top: 40px; padding-bottom: 24px; }
             .class-label { font-size: 18px; }
             .main-title { font-size: 38px; line-height: 1.15; }
-
             .button-list { margin-top: 24px; }
-            .learning-btn {
-                min-height: 82px;
-                padding: 18px 26px;
-                border-radius: 24px;
-                margin-bottom: 16px;
-            }
-            .btn-text {
-                font-size: 17px;
-                line-height: 1.5;
-                margin-left: 20px;
-            }
-            .icon-area {
-                width: 52px;
-                height: 52px;
-                font-size: 32px;
-            }
+            .learning-btn { min-height: 82px; padding: 18px 26px; border-radius: 24px; margin-bottom: 16px; }
+            .btn-text { font-size: 17px; line-height: 1.5; margin-left: 20px; }
+            .icon-area { width: 52px; height: 52px; font-size: 32px; }
         }
 
-        /* B. TABLET — 768px sampai 1199px */
         @media (min-width: 768px) and (max-width: 1199px) {
-            .container {
-                width: 90%;
-                max-width: 900px;
-            }
-            header {
-                padding-top: 32px;
-                padding-bottom: 20px;
-            }
+            .container { width: 90%; max-width: 900px; }
+            header { padding-top: 32px; padding-bottom: 20px; }
             .class-label { font-size: 16px; }
             .main-title { font-size: 32px; line-height: 1.15; }
-
             .button-list { margin-top: 20px; }
-            .learning-btn {
-                min-height: 78px;
-                padding: 17px 22px;
-                border-radius: 20px;
-                margin-bottom: 14px;
-            }
-            .btn-text {
-                font-size: 16px;
-                line-height: 1.5;
-                margin-left: 16px;
-            }
-            .icon-area {
-                width: 48px;
-                height: 48px;
-                font-size: 28px;
-            }
+            .learning-btn { min-height: 78px; padding: 17px 22px; border-radius: 20px; margin-bottom: 14px; }
+            .btn-text { font-size: 16px; line-height: 1.5; margin-left: 16px; }
+            .icon-area { width: 48px; height: 48px; font-size: 28px; }
         }
 
-        /* C. SMARTPHONE — ≤ 767px */
         @media (max-width: 767px) {
-            .container {
-                width: 92%;
-                max-width: none;
-            }
-            header {
-                padding-top: 24px;
-                padding-bottom: 16px;
-            }
+            .container { width: 92%; max-width: none; }
+            header { padding-top: 24px; padding-bottom: 16px; }
             .header-logo { width: 65px; }
             .class-label { font-size: 14px; }
             .main-title { font-size: 25px; line-height: 1.2; }
-
             .button-list { margin-top: 18px; }
-            .learning-btn {
-                min-height: 76px;
-                padding: 16px 18px;
-                border-radius: 18px;
-                margin-bottom: 12px;
-            }
-            .btn-text {
-                font-size: 14px;
-                line-height: 1.55;
-                margin-left: 12px;
-            }
-            .icon-area {
-                width: 42px;
-                height: 42px;
-                font-size: 26px;
-            }
+            .learning-btn { min-height: 76px; padding: 16px 18px; border-radius: 18px; margin-bottom: 12px; }
+            .btn-text { font-size: 14px; line-height: 1.55; margin-left: 12px; }
+            .icon-area { width: 42px; height: 42px; font-size: 26px; }
             .page-footer p { font-size: 0.78rem; }
         }
 
-        /* D. SMARTPHONE KECIL — ≤ 480px */
         @media (max-width: 480px) {
-            .container {
-                width: 94%;
-            }
+            .container { width: 94%; }
             .header-logo { width: 55px; }
             .class-label { font-size: 13px; }
             .main-title { font-size: 22px; }
-
-            .learning-btn {
-                min-height: 72px;
-                padding: 14px 15px;
-                border-radius: 16px;
-            }
-            .btn-text {
-                font-size: 13px;
-                line-height: 1.55;
-                margin-left: 10px;
-            }
-            .icon-area {
-                width: 38px;
-                height: 38px;
-                font-size: 24px;
-            }
+            .learning-btn { min-height: 72px; padding: 14px 15px; border-radius: 16px; }
+            .btn-text { font-size: 13px; line-height: 1.55; margin-left: 10px; }
+            .icon-area { width: 38px; height: 38px; font-size: 24px; }
             .page-footer p { font-size: 0.72rem; }
         }
     </style>
@@ -496,6 +412,13 @@
     <script>
         document.querySelectorAll('.learning-btn').forEach(btn => {
             btn.addEventListener('click', function(e) {
+                // PENCEGAHAN DEFAULT UNTUK LINK PLACEHOLDER / KOSONG
+                const targetHref = this.getAttribute('href');
+                if (!targetHref || targetHref.includes('#')) {
+                    e.preventDefault();
+                }
+
+                // ANIMASI RIPPLE EFEK
                 const rect = btn.getBoundingClientRect();
                 const x = e.clientX - rect.left;
                 const y = e.clientY - rect.top;
